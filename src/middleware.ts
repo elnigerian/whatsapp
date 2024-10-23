@@ -1,10 +1,10 @@
-import { authMiddleware } from "@clerk/nextjs";
+import { authMiddleware } from '@clerk/nextjs';
 
 // See https://clerk.com/docs/references/nextjs/auth-middleware
 // for more information about configuring your Middleware
 export default authMiddleware({
-	// Allow signed out users to access the specified routes:
-	// publicRoutes: ["/"],
+	// Allow signed-out users to access the specified routes:
+	publicRoutes: ["/"],
 });
 
 export const config = {
